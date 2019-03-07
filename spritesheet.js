@@ -49,10 +49,6 @@ function onAssetsLoaded()
     spriteAnimation(stageWidth/2+150,stageHeight/2+200,"objects/Crate",5,frameCount);
     frameCount++;
 
-     // Box
-     spriteAnimation(350,stageHeight/2+230,"objects/Box",3,frameCount);
-     frameCount++;
-
      // Capguy
      capguyAnimation(200,stageHeight-170,"capguy_",8);
 
