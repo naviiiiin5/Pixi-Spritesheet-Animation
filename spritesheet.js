@@ -19,6 +19,9 @@ function onAssetsLoaded()
     // Bus Bench
     staticSprite(180,stageHeight/2-70,"objects/Bus Bench.png");
 
+    // Fruits Stand
+    staticSprite(stageWidth/2+40,stageHeight/2+200,"objects/Fruitstand0001.png");
+
     // Flower Pot
     staticSprite(stageWidth-120,stageHeight/2+170,"objects/Flower Pot 20001.png");
 
@@ -39,7 +42,11 @@ function onAssetsLoaded()
     frameCount++;
 
     // Dustbin
-    spriteAnimation(stageWidth/2+350,stageHeight-200,"objects/trashcan/Trashcan_",6,frameCount);
+    spriteAnimation(stageWidth/2+380,stageHeight-200,"objects/trashcan/Trashcan_",6,frameCount);
+    frameCount++;
+
+    // Crates
+    spriteAnimation(stageWidth/2+150,stageHeight/2+200,"objects/Crate",5,frameCount);
     frameCount++;
 
      // Box
@@ -47,10 +54,10 @@ function onAssetsLoaded()
      frameCount++;
 
      // Capguy
-     capguyAnimation(100,stageHeight-170,"capguy_",8);
+     capguyAnimation(200,stageHeight-170,"capguy_",8);
 
      //Man Hole
-     manHole(stageWidth/2+200,stageHeight-70,"objects/manhole/Manhole_",8);
+     manHole(stageWidth/2+400,stageHeight-70,"objects/manhole/Manhole_",8);
      
 
 }
@@ -117,7 +124,7 @@ function gameLoop(delta)
     onClick;
     onkeydown;
     onkeyup;
-    if(capguyAnim.x==stageWidth/2+50){
+    if(capguyAnim.x==stageWidth/2+250){
         capguyAnim.gotoAndStop(6);
         app.stage.removeChild(capguyAnim);
         manholeAnim.play();
