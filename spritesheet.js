@@ -120,7 +120,7 @@ function gameLoop(delta)
     onClick;
     onkeydown;
     onkeyup;
-    if(capguyAnim.x==manholeAnim.x-150){
+    if(capguyAnim.x==manholeAnim.x-140){
         capguyAnim.gotoAndStop(6);
         app.stage.removeChild(capguyAnim);
         manholeAnim.play();
