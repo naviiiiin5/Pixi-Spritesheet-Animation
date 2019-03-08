@@ -50,7 +50,7 @@ function onAssetsLoaded()
     frameCount++;
 
      // Capguy
-     capguyAnimation(200,stageHeight-170,"capguy_",8);
+     capguyAnimation(200,stageHeight-200,"capguy_",8);
 
      //Man Hole
      manHole(stageWidth/2+400,stageHeight-70,"objects/manhole/Manhole_",8);
@@ -87,9 +87,9 @@ function manHole(x,y,texturePath,totalAnimation){
     manholeAnim.x =x;
     manholeAnim.y =y;
     manholeAnim.anchor.set(0.5);
-    manholeAnim.animationSpeed = 0.4;
+    manholeAnim.animationSpeed = 0.2;
     app.stage.addChild(manholeAnim);
-   // manholeAnim.gotoAndStop(2);
+    // manholeAnim.gotoAndStop(2);
 }
 function capguyAnimation(x,y,texturePath,totalAnimation)
 {
@@ -120,7 +120,7 @@ function gameLoop(delta)
     onClick;
     onkeydown;
     onkeyup;
-    if(capguyAnim.x==stageWidth/2+250){
+    if(capguyAnim.x==manholeAnim.x-150){
         capguyAnim.gotoAndStop(6);
         app.stage.removeChild(capguyAnim);
         manholeAnim.play();
