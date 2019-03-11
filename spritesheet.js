@@ -15,7 +15,7 @@ function onAssetsLoaded()
     bg = PIXI.Texture.from("background.png");
     background=new PIXI.Sprite(bg);
     app.stage.addChild(background);
-    
+   
     // Bus Bench
     staticSprite(180,stageHeight/2-70,"objects/Bus Bench.png");
 
@@ -89,6 +89,7 @@ function manHole(x,y,texturePath,totalAnimation){
     manholeAnim.anchor.set(0.5);
     manholeAnim.animationSpeed = 0.2;
     app.stage.addChild(manholeAnim);
+    
     // manholeAnim.gotoAndStop(2);
 }
 function capguyAnimation(x,y,texturePath,totalAnimation)
